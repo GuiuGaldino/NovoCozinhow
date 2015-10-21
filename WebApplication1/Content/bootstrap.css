@@ -2344,7 +2344,7 @@ fieldset[disabled] .btn-link:focus {
 
 .btn-block {
   display: inline-block !important;
-  width: 140px !important;
+  width: 140px;
   padding-right: 0;
   padding-left: 0;
 }

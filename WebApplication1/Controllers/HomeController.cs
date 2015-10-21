@@ -26,5 +26,16 @@ namespace WebApplication1.Controllers
 
             return View();
         }
+
+        public ActionResult Register() {
+
+            return Register();
+        }
+
+        public ActionResult Login()
+        {
+
+            return Login();
+        }
     }
 }
