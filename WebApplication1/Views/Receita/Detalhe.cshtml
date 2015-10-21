@@ -1,0 +1,48 @@
+﻿ <!-- Button trigger modal -->
+<a class="btn btn-blue btn-block" data-toggle="modal" data-target="#myModal">
+    DETALHES
+</a>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="detalhesModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <!-- título -->
+                <h2 class="text-center">Título Receita</h2>
+            </div>
+            <div class="modal-body">
+
+                <!-- imagem -->
+                <img class="row col-md-8 col-md-offset-2 img-responsive" style="margin-top: 5px" src="~/images/Miojo.jpg">
+
+                <!-- botões -->
+                <div class="row text-center">
+                    <div class="col-md-3">
+                        <p class="detail-number">123</p>
+                        <i class="heart-icon fa fa-heart-o"></i> @*Trocar classe, se clicar: fa-heart*@
+                    </div>
+                    <div class="col-md-3">
+                        <p class="detail-number">123</p>
+                        <a class="btn btn-yellow btn-block">FAVORITOS</a>
+                    </div>
+                    <div class="col-md-3">
+                        <p class="detail-number">123</p>
+                        <a class="btn btn-blue btn-block">QUERO FAZER</a>
+                    </div>
+                    <div class="col-md-3">
+                        <p class="detail-number">123</p>
+                        <a class="btn btn-green btn-block">JÁ FIZ</a>
+                    </div>
+                </div>
+
+                <div class="row detail-btn-line">
+                    <p class="col-md-2 detail-number">123 min</p>
+                    <p class="col-md-2 detail-number">123 porções</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

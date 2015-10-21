@@ -55,11 +55,11 @@ body {
 }
 .btn-green{
     color: #37CA58;
-    border-bottom-color: #37CA58;
+    border-color: #37CA58;
 }
 .btn-orange {
     color: #FDCA45;
-    border-bottom-color: #FDCA45;
+    border-color: #FDCA45;
 }
 .btn-yellow {
     color: #DAE43E;
@@ -68,11 +68,11 @@ body {
 }
 .btn-blue {
     color: #6B93FD;
-    border-bottom-color: #6B93FD;
+    border-color: #6B93FD;
 }
 .btn-red {
     color: #FD6C44;
-    border-bottom-color: #FD6C44;
+    border-color: #FD6C44;
 }
 
 .btn-login {
@@ -262,4 +262,22 @@ textarea {
     transition: all 0.4s ease 0s;
     position: relative;
     min-height: 100%;
+}
+
+.heart-icon {
+    font-size: 26pt !important;
+    color: #444545;
+    cursor: pointer;
+}
+
+.detail-btn-line {
+    width: 800px;
+    display: inline-block;
+    margin-top: 25px;
+}
+
+.detail-number {
+    color: #444545;
+    margin-bottom: 0.5px;
+    font-size: 16px;
 }
