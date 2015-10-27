@@ -5436,16 +5436,16 @@ a.list-group-item:focus {
 
 .panel-default > .panel-heading {
   color: #333333;
-  background-color: #f5f5f5;
-  border-color: #dddddd;
+  background-color: #fff;
+  border-color: rgba(255, 255, 255, 0.15);
 }
 
 .panel-default > .panel-heading + .panel-collapse .panel-body {
-  border-top-color: #dddddd;
+  border-top-color: rgba(255, 255, 255, 0.15);
 }
 
 .panel-default > .panel-footer + .panel-collapse .panel-body {
-  border-bottom-color: #dddddd;
+  border-bottom-color: rgba(255, 255, 255, 0.15);
 }
 
 .panel-primary {
@@ -5454,8 +5454,8 @@ a.list-group-item:focus {
 
 .panel-primary > .panel-heading {
   color: #ffffff;
-  background-color: #428bca;
-  border-color: #428bca;
+  background-color: #fff;
+  border-color: rgba(255, 255, 255, 0.15);
 }
 
 .panel-primary > .panel-heading + .panel-collapse .panel-body {

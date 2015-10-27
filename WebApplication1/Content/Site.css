@@ -28,9 +28,17 @@ body {
     color: #666666;
 }
 
+.subtitle{
+    color: #444545;
+    font-size: 18pt;
+}
 .title{
     color: #444545;
-    font-size: 16pt;
+    font-size: 24pt;
+}
+
+.imagem-botao {
+    cursor: pointer;
 }
 
 .header {    
