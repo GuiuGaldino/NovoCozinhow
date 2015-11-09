@@ -253,6 +253,7 @@
     <Content Include="Views\Shared\_LayoutLogado.cshtml" />
     <Content Include="Views\Receita\Detalhe.cshtml" />
     <Content Include="Views\Receita\Lista.cshtml" />
+    <Content Include="Views\Receita\Perfil.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

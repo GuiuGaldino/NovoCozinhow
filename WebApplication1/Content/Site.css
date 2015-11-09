@@ -29,10 +29,12 @@ body {
 }
 
 .subtitle{
+    font-family: Calibri;
     color: #444545;
     font-size: 18pt;
 }
 .title{
+    font-family: Calibri;
     color: #444545;
     font-size: 24pt;
 }
@@ -81,6 +83,10 @@ body {
 .btn-red {
     color: #FD6C44;
     border-color: #FD6C44;
+}
+.btn-black {
+    color: black;
+    border-color: black;
 }
 
 .btn-login {
@@ -359,4 +365,24 @@ textarea {
 .actionBox {
     border-top:1px dotted #bbb;
     padding:10px;
+}
+
+.perfil-pic {
+    width: 150px !important;
+    height: 150px !important;
+}
+
+.perfil-header {
+    background-color: white;
+}
+
+.perfil-stats {
+    margin-left: -30px;
+}
+
+.perfil-post {
+    cursor: pointer;
+    margin: 10px;
+    width: 300px;
+    height: 300px;    
 }
