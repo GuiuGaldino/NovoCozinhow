@@ -1,0 +1,167 @@
+﻿<div class="row text perfil-header">
+
+    <!-- foto do perfil e nome do usuário-->
+    <div class="col-md-3 profile-userpic text-center">
+        <img class="perfil-pic" src="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xpf1/v/t1.0-9/11904075_916925115045782_4850680110929056078_n.jpg?oh=bbd28535d054c09ff5da7b7ee24acd2c&oe=569B530A&__gda__=1456518752_e898b1ebe58bf411e2e93b17384e6892">
+        <p>guiu</p>
+    </div>
+
+    <div class="col-md-7" style="margin-top: 30px">
+        <!-- nome e descrição-->
+        <div class="col-md-9">
+            <div class="subtitle">Guilherme Guiu</div>
+            <p>estou aqui pelas comidinhas.</p>
+        </div>
+
+        <!-- botão seguir-->
+        <div class="col-md-3">
+            <a class="btn btn-black btn-block">EDITAR PERFIL</a>
+        </div>
+
+        <!-- receitas, seguidores e seguindo-->
+        <div class="col-md-12 perfil-stats">
+            <div class="col-md-3" style="margin-top: 35px">
+                <p class="col-md-4 detail-number">321 </p>
+                <p class="col-md-8 text">RECEITAS</p>
+            </div>
+            <div class="col-md-3" style="margin-top: 35px">
+                <p class="col-md-4 detail-number">321 </p>
+                <p class="col-md-8 text">SEGUIDORES</p>
+            </div>
+            <div class="col-md-3" style="margin-top: 35px">
+                <p class="col-md-8 text">SEGUINDO </p>
+                <p class="col-md-4 detail-number">321</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!--lista-->
+<div class="row" style="margin-top: 60px">
+    <!-- imagem postada -->
+    <div class="col-md-4">
+        <a data-toggle="modal" data-target="#myModal1">
+            <!--id do modal-->
+            <img class="perfil-post" src="~/Content/img/pure.jpg">
+        </a>
+    </div>
+
+    <div class="col-md-4">
+        <a data-toggle="modal" data-target="#myModal2">
+            <img class="perfil-post" src="~/Content/img/pure.jpg">
+        </a>
+    </div>
+
+    <div class="col-md-4">
+        <a data-toggle="modal" data-target="#myModal3">
+            <img class="perfil-post" src="~/Content/img/pure.jpg">
+        </a>
+    </div>
+
+    <div class="col-md-4">
+        <a data-toggle="modal" data-target="#myModal1">
+            <img class="perfil-post" src="~/Content/img/pure.jpg">
+        </a>
+    </div>
+
+    <div class="col-md-4">
+        <a data-toggle="modal" data-target="#myModal2">
+            <img class="perfil-post" src="~/Content/img/pure.jpg">
+        </a>
+    </div>
+
+    <div class="col-md-4">
+        <a data-toggle="modal" data-target="#myModal3">
+            <img class="perfil-post" src="~/Content/img/pure.jpg">
+        </a>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade text" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="detalhesModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <!-- título -->
+                    <h2 class="title text-center">Purê de Batata</h2>
+                </div>
+                <div class="modal-body">
+
+                    <!-- imagem -->
+                    <img class="row col-md-12 col-md-offset-0" src="~/Content/img/pure.jpg">
+
+                    <!-- botões -->
+                    <div class="row text-center" style="margin-top: 20px">
+                        <div class="col-md-2">
+                            <p class="detail-number">123</p>
+                            <i class="heart-icon fa fa-heart-o"></i> @*Trocar classe, se clicar: fa-heart*@
+                        </div>
+
+                        <div class="col-md-3" style="margin-left: 10px">
+                            <p class="detail-number">123</p>
+                            <a class="btn btn-yellow btn-block" style="width: 100% !important">FAVORITOS</a>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="detail-number">123</p>
+                            <a class="btn btn-blue btn-block" style="width: 100% !important">QUERO FAZER</a>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="detail-number">123</p>
+                            <a class="btn btn-green btn-block" style="width: 100% !important">JÁ FIZ</a>
+                        </div>
+                    </div>
+
+                    <div class="row col-md-12 detail-btn-line">
+                        <p class="col-md-2 detail-number">123 min</p>
+                        <p class="col-md-2 detail-number">123 porções</p>
+                    </div>
+
+                    <!-- Receita -->
+                    <div class="row col-md-12">
+                        <div class="col-md-6">
+                            <p class="subtitle">Ingredientes</p>
+
+                            <ul>
+                                <li>Batata</li>
+                                <li>Manteiga</li>
+                                <li>Sal</li>
+                            </ul>
+
+                        </div>
+
+                        <div class="col-md-6">
+                            <p class="subtitle">Modo de Preparo</p>
+
+                            <ol>
+                                <li>Cozinhe a batata</li>
+                                <li>Bata no liquidifucador com a manteiga</li>
+                                <li>Adicione sal a gosto</li>
+                            </ol>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comentários -->
+                <div class="detail-btn-line detailBox">
+                    <div class="titleBox">
+                        <label>Comentários</label>
+                    </div>
+                    <div class="actionBox">
+                        <form class="form-inline" role="form">
+                            <div class="form-group">
+                                <input class="form-control" type="text" placeholder="Comente a receita.." />
+                            </div>
+                            <div style="float: right; margin-top: -34px">
+                                <button class="btn btn-orange btn-block">POSTAR</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>

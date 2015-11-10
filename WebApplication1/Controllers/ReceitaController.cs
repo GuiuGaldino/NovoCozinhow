@@ -13,12 +13,37 @@ namespace WebApplication1.Controllers
             return View();
         }
 
-        public ActionResult Lista()
+        public ActionResult Favoritos()
         {
             return View();
         }
 
-        public ActionResult Perfil()
+        public ActionResult JaFiz()
+        {
+            return View();
+        }
+
+        public ActionResult QueroFazer()
+        {
+            return View();
+        }
+
+        public ActionResult MeuPerfil()
+        {
+            return View();
+        }
+
+        public ActionResult PerfilAmigo()
+        {
+            return View();
+        }
+
+        public ActionResult Timeline()
+        {
+            return View();
+        }
+
+        public ActionResult Postar()
         {
             return View();
         }

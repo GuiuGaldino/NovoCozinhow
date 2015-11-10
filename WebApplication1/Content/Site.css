@@ -8,6 +8,7 @@
 /* cores:
    título: #444545
    texto: #666666
+   bordas: #a3a3a3
    laranja: #FDCA45
    amarelo: #DAE43E
    verde: #37CA58
@@ -24,7 +25,7 @@ body {
 .text {    
     font-family: Calibri;
     font-style: normal;
-    font-size: 12pt;
+    font-size: 11pt;
     color: #666666;
 }
 
@@ -37,10 +38,6 @@ body {
     font-family: Calibri;
     color: #444545;
     font-size: 24pt;
-}
-
-.imagem-botao {
-    cursor: pointer;
 }
 
 .header {    
@@ -266,6 +263,10 @@ textarea {
     position: fixed;
     top: 50px;
     transition: all 0.4s ease 0s;
+    background-color: white;
+    border-right-style: solid;
+    border-color: #a3a3a3;
+    border-width: 1px;
 }
 
 #wrapper {
@@ -374,6 +375,11 @@ textarea {
 
 .perfil-header {
     background-color: white;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: #a3a3a3;
+    border-width: 1px;
+    margin-top: -14px !important;
 }
 
 .perfil-stats {
@@ -383,6 +389,37 @@ textarea {
 .perfil-post {
     cursor: pointer;
     margin: 10px;
-    width: 300px;
-    height: 300px;    
+    width: 300px !important;
+    height: 300px !important;    
+}
+
+.timeline-image {
+    width: 515px !important;
+    height: 515px !important;
+    margin-top: 10px; 
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.timeline-block {
+    background-color: white;
+    border-style: solid;
+    border-color: #a3a3a3;
+    border-width: 1px;
+    margin-bottom: 20px;
+}
+
+.timeline-pic {
+    width: 65px !important;
+    height: 65px !important;
+    padding: 3px;
+    margin-left: -30px !important;
+}
+
+.timeline-username {
+    color: #FDCA45;
+    font-size: 13pt !important;
+    margin-top: 20px;
+    font-weight: bold;
+    margin-left: -40px !important;
 }

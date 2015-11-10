@@ -27,7 +27,7 @@
                 </div>
 
                 <div class="col-md-3 col-lg-offset-6" style="margin-top: 8px">                    
-                    <a class="btn btn-default btn-block" href="#">
+                    <a class="btn btn-default btn-block" href="@Url.Content("~/Receita/Postar")">
                         POSTAR
                     </a>
                 </div>
@@ -38,12 +38,12 @@
 
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="@Url.Content("~/Receita/Perfil")">
+                        <a href="@Url.Content("~/Receita/MeuPerfil")">
                             <i class="fa fa-user header-icon"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="@Url.Content("~/Receita/Timeline")">
                             <i class="fa fa-home header-icon"></i>
                         </a>
                     </li>
@@ -65,10 +65,10 @@
             <!-- END SIDEBAR USERPIC -->
             <!-- SIDEBAR USER TITLE -->
             <div class="profile-usertitle">
-                <a asp-controller="Account" class="title profile-name">
-                    Guiu
+                <a asp-controller="Account" class="profile-name subtitle">
+                    Guilherme Guiu
                 </a>
-                <div class="text profile-username">
+                <div class="profile-username text">
                     Guiu
                 </div>
             </div>
@@ -78,19 +78,19 @@
                 <div class="profile-usermenu">
                     <ul class="nav">
                         <li>
-                            <a href="@Url.Content("~/Receita/Lista")">
+                            <a href="@Url.Content("~/Receita/Favoritos")">
                                 <i class="icon fa fa-star"></i>
                                 Receitas Favoritas
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="@Url.Content("~/Receita/JaFiz")">
                                 <i class="icon fa fa-trophy"></i>
                                 Receitas que já fiz
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="@Url.Content("~/Receita/QueroFazer")">
                                 <i class="icon fa fa-cutlery"></i>
                                 Receitas que quero fazer
                             </a>

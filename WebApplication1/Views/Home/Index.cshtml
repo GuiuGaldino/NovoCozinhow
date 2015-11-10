@@ -2,7 +2,7 @@
     ViewData["Title"] = "Home Page";
 }
 
-@if (!User.Identity.IsAuthenticated)
+@if (User.Identity.IsAuthenticated)
 {
 
     <div class="carousel-inner" role="listbox">
@@ -64,125 +64,232 @@
 
 else
 {
+    <!-- LISTAR -->
 
-     <!-- Button trigger modal -->
-    <a data-toggle="modal" data-target="#myModal">
-        <img class="row col-md-8 col-md-offset-2 imagem-botao" style="margin-top: 10px; margin-bottom: 10px" src="~/Content/img/pure.jpg">
-    </a>
+     <!-- timeline post -->
+    <div class="col-md-6 col-md-offset-3 timeline-block text">
 
-    <!-- Modal -->
-    <div class="modal fade text" id="myModal" tabindex="-1" role="dialog" aria-labelledby="detalhesModal">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <!-- título -->
-                    <h2 class="title text-center">Purê de Batata</h2>
-                </div>
-                <div class="modal-body">
+        <div class="container">
 
-                    <!-- imagem -->
-                    <img class="row col-md-12 col-md-offset-0" src="~/Content/img/pure.jpg">
+            <!-- foto do perfil -->
+            <a href="@Url.Content("~/Receita/PerfilAmigo")">
+            <div class="col-md-2 profile-userpic">
+                <img class="timeline-pic" src="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-9/263530_553441498006186_5108385_n.jpg?oh=e6a4fadf4dac697cc035089ff2e9afcf&oe=56C71522&__gda__=1454161012_daedf29c82385b0c3d107898e927c013">
+            </div>
 
-                    <!-- botões -->
-                    <div class="row text-center" style="margin-top: 20px">
-                        <div class="col-md-2">
-                            <p class="detail-number">123</p>
-                            <i class="heart-icon fa fa-heart-o"></i> @*Trocar classe, se clicar: fa-heart*@
-                        </div>
+            <!-- nome do usuário-->
+            <div class="col-md-2 timeline-username">
+                <p>mefiu</p>
+            </div>
+                </a>
+            <!-- nome receita-->
+            <h2 class="title text-center col-md-7">Nome Receita</h2>
+        </div>
 
-                        <div class="col-md-3" style="margin-left: 10px">
-                            <p class="detail-number">123</p>
-                            <a class="btn btn-yellow btn-block" style="width: 100% !important">FAVORITOS</a>
-                        </div>
-                        <div class="col-md-3">
-                            <p class="detail-number">123</p>
-                            <a class="btn btn-blue btn-block" style="width: 100% !important">QUERO FAZER</a>
-                        </div>
-                        <div class="col-md-3">
-                            <p class="detail-number">123</p>
-                            <a class="btn btn-green btn-block" style="width: 100% !important">JÁ FIZ</a>
-                        </div>
+        <!-- imagem receita-->
+        <a data-toggle="modal" data-target="#myModal">
+            <!--id modal-->
+            <img class="timeline-image" src="~/Content/img/pure.jpg">
+        </a>
+
+        <!-- comentários -->
+        <div class="actionBox">
+            <ul class="commentList">
+                <li>
+                    <!-- foto perfil -->
+                    <div class="commenterImage">
+                        <img src="http://lorempixel.com/50/50/people/6" />
                     </div>
-
-                    <div class="row col-md-12 detail-btn-line">
-                        <p class="col-md-2 detail-number">123 min</p>
-                        <p class="col-md-2 detail-number">123 porções</p>
+                    <!-- username -->
+                    <div class="timeline-username">
+                        <p>guiu</p>
                     </div>
-
-                    <!-- Receita -->
-                    <div class="row col-md-12">
-                        <div class="col-md-6">
-                            <p class="subtitle">Ingredientes</p>
-
-                            <ul>
-                                <li>Batata</li>
-                                <li>Manteiga</li>
-                                <li>Sal</li>
-                            </ul>
-
-                        </div>
-                        
-                        <div class="col-md-6">
-                            <p class="subtitle">Modo de Preparo</p>
-
-                            <ol>
-                                <li>Cozinhe a batata</li>
-                                <li>Bata no liquidifucador com a manteiga</li>
-                                <li>Adicione sal a gosto</li>
-                            </ol>
-
-                        </div>
+                    <!-- comentário -->
+                    <div class="commentText text">
+                        <p style="margin-left: 10px">Hello this is a test comment.</p>
                     </div>
-                </div>
-
-                <!-- Comentários -->
-                <div class="detail-btn-line detailBox">
-                    <div class="titleBox">
-                        <label>Comentários</label>
+                </li>
+                <li>
+                    <!-- foto perfil -->
+                    <div class="commenterImage">
+                        <img src="http://lorempixel.com/50/50/people/7" />
                     </div>
-                    <div class="actionBox">
-                     @*   <ul class="commentList">
-                            <li>
-                                <div class="commenterImage">
-                                    <img src="http://lorempixel.com/50/50/people/6" />
-                                </div>
-                                <div class="commentText">
-                                    <p class="">Hello this is a test comment.</p> <span class="date sub-text">on March 5th, 2014</span>
-
-                                </div>
-                            </li>
-                            <li>
-                                <div class="commenterImage">
-                                    <img src="http://lorempixel.com/50/50/people/7" />
-                                </div>
-                                <div class="commentText">
-                                    <p class="">Hello this is a test comment and this comment is particularly very long and it goes on and on and on.</p> <span class="date sub-text">on March 5th, 2014</span>
-
-                                </div>
-                            </li>
-                            <li>
-                                <div class="commenterImage">
-                                    <img src="http://lorempixel.com/50/50/people/9" />
-                                </div>
-                                <div class="commentText">
-                                    <p class="">Hello this is a test comment.</p> <span class="date sub-text">on March 5th, 2014</span>
-
-                                </div>
-                            </li>
-                        </ul>*@
-                        <form class="form-inline" role="form">
-                            <div class="form-group">
-                                <input class="form-control" type="text" placeholder="Comente a receita.." />
-                            </div>
-                            <div style="float: right; margin-top: -34px">
-                                <button class="btn btn-orange btn-block">POSTAR</button>
-                            </div>
-                        </form>
+                    <!-- username -->
+                    <div class="timeline-username">
+                        <p>mefiu</p>
                     </div>
+                    <!-- comentário -->
+                    <div class="commentText text">
+                        <p style="margin-left: 10px">Hello this is a test comment.</p>
+                    </div>
+                </li>
+                <li>
+                    <!-- foto perfil -->
+                    <div class="commenterImage">
+                        <img src="http://lorempixel.com/50/50/people/9" />
+                    </div>
+                    <!-- username -->
+                    <div class="timeline-username">
+                        <p>bill</p>
+                    </div>
+                    <!-- comentário -->
+                    <div class="commentText text">
+                        <p style="margin-left: 10px">Hello this is a test comment.</p>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="container" style="margin-top: 20px">
+                <!-- curtir -->
+                <div class="col-md-2">
+                    <i class="heart-icon fa fa-heart-o" style="margin-left: -35px"></i> @*Trocar classe, se clicar: fa-heart*@
                 </div>
 
+                <!-- comentar -->
+                <div class="col-md-7 col-md-pull-1">
+                    <form class="form-inline" role="form">
+                        <div class="form-group" style="width: 100%">
+                            <input class="form-control" type="text" placeholder="Comente a receita.." />
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-md-2 col-md-pull-1">
+                    <button class="btn btn-orange btn-block">COMENTAR</button>
+                </div>
             </div>
         </div>
     </div>
+
+        <!--Modal-->
+        <div class="modal fade text" id="myModal" tabindex="-1" role="dialog" aria-labelledby="detalhesModal">
+            <!-- id modal -->
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <!-- título -->
+                        <h2 class="title text-center">Purê de Batata</h2>
+                    </div>
+                    <div class="modal-body">
+
+                        <!-- imagem -->
+                        <img class="row col-md-12 col-md-offset-0" src="~/Content/img/pure.jpg">
+
+                        <!-- botões -->
+                        <div class="row text-center" style="margin-top: 20px">
+                            <div class="col-md-2">
+                                <p class="detail-number">123</p>
+                                <i class="heart-icon fa fa-heart-o"></i> @*Trocar classe, se clicar: fa-heart*@
+                            </div>
+
+                            <div class="col-md-3" style="margin-left: 10px">
+                                <p class="detail-number">123</p>
+                                <a class="btn btn-yellow btn-block" style="width: 100% !important">FAVORITOS</a>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="detail-number">123</p>
+                                <a class="btn btn-blue btn-block" style="width: 100% !important">QUERO FAZER</a>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="detail-number">123</p>
+                                <a class="btn btn-green btn-block" style="width: 100% !important">JÁ FIZ</a>
+                            </div>
+                        </div>
+
+                        <div class="row col-md-12 detail-btn-line">
+                            <p class="col-md-2 detail-number">123 min</p>
+                            <p class="col-md-2 detail-number">123 porções</p>
+                        </div>
+
+                        <!-- Receita -->
+                        <div class="row col-md-12">
+                            <div class="col-md-6">
+                                <p class="subtitle">Ingredientes</p>
+
+                                <ul>
+                                    <li>Batata</li>
+                                    <li>Manteiga</li>
+                                    <li>Sal</li>
+                                </ul>
+
+                            </div>
+
+                            <div class="col-md-6">
+                                <p class="subtitle">Modo de Preparo</p>
+
+                                <ol>
+                                    <li>Cozinhe a batata</li>
+                                    <li>Bata no liquidifucador com a manteiga</li>
+                                    <li>Adicione sal a gosto</li>
+                                </ol>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Comentários -->
+                    <div class="detail-btn-line detailBox">
+                        <div class="titleBox">
+                            <label>Comentários</label>
+                        </div>
+                        <div class="actionBox">
+                            <ul class="commentList">
+                                <li>
+                                    <!-- foto perfil -->
+                                    <div class="commenterImage">
+                                        <img src="http://lorempixel.com/50/50/people/6" />
+                                    </div>
+                                    <!-- username -->
+                                    <div class="timeline-username">
+                                        <p>guiu</p>
+                                    </div>
+                                    <!-- comentário -->
+                                    <div class="commentText text">
+                                        <p style="margin-left: 10px">Hello this is a test comment.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <!-- foto perfil -->
+                                    <div class="commenterImage">
+                                        <img src="http://lorempixel.com/50/50/people/7" />
+                                    </div>
+                                    <!-- username -->
+                                    <div class="timeline-username">
+                                        <p>mefiu</p>
+                                    </div>
+                                    <!-- comentário -->
+                                    <div class="commentText text">
+                                        <p style="margin-left: 10px">Hello this is a test comment.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <!-- foto perfil -->
+                                    <div class="commenterImage">
+                                        <img src="http://lorempixel.com/50/50/people/9" />
+                                    </div>
+                                    <!-- username -->
+                                    <div class="timeline-username">
+                                        <p>bill</p>
+                                    </div>
+                                    <!-- comentário -->
+                                    <div class="commentText text">
+                                        <p style="margin-left: 10px">Hello this is a test comment.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <form class="form-inline" role="form">
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="Comente a receita.." />
+                                </div>
+                                <div style="float: right; margin-top: -34px">
+                                    <button class="btn btn-orange btn-block">COMENTAR</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
 }

@@ -1,0 +1,67 @@
+﻿<h1 class="title text-center" style="margin-bottom: 20px">Quero Fazer</h1>
+
+<div class="panel-group text" id="accordion" role="tablist" aria-multiselectable="true">
+
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title text">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Purê de Batata
+                </a>
+            </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+            <div class="row panel-body">
+
+                <!-- imagem -->
+                <a data-toggle="modal" data-target="#myModal">
+                    <img class="col-md-4 imagem-botao" src="~/Content/img/pure.jpg">
+                </a>
+
+                <div class="col-md-8 text-center" style="float: right;">
+                    @*    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>*@
+
+                    <!-- nome receita -->
+                    <h2 class="subtitle text-center" style="margin-top: -10px">Purê de Batata</h2>
+                    <p style="margin-bottom: 30px; margin-top: -10px">Receita por fulano</p>
+
+                    <!-- botões -->
+                    <div class="col-md-2">
+                        <p class="detail-number">123</p>
+                        <i class="heart-icon fa fa-heart-o"></i> @*Trocar classe, se clicar: fa-heart*@
+                    </div>
+
+                    <div class="col-md-3" style="margin-left: 10px">
+                        <p class="detail-number">123</p>
+                        <a class="btn btn-yellow btn-block" style="width: 100% !important">FAVORITOS</a>
+                    </div>
+                    <div class="col-md-3">
+                        <p class="detail-number">123</p>
+                        <a class="btn btn-blue btn-block" style="width: 100% !important">QUERO FAZER</a>
+                    </div>
+                    <div class="col-md-3">
+                        <p class="detail-number">123</p>
+                        <a class="btn btn-green btn-block" style="width: 100% !important">JÁ FIZ</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingTwo">
+            <h4 class="panel-title text">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Arroz com Farofa
+                </a>
+            </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+        </div>
+    </div>
+
+</div>

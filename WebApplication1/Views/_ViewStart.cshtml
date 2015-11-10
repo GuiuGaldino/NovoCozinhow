@@ -6,10 +6,10 @@
 @{
     if (User.Identity.IsAuthenticated)
     {
-        Layout = "~/Views/Shared/_LayoutLogado.cshtml";
+        Layout = "~/Views/Shared/_Layout.cshtml";
     }
     else
     {
-        Layout = "~/Views/Shared/_Layout.cshtml";
+        Layout = "~/Views/Shared/_LayoutLogado.cshtml";
     }
 }

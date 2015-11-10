@@ -1,16 +1,17 @@
-﻿ <!-- Button trigger modal -->
+﻿ <!-- Button trigger modal 
 <a data-toggle="modal" data-target="#myModal">
     <img class="row col-md-8 col-md-offset-2" style="margin-top: 10px; margin-bottom: 10px" src="~/Content/img/pure.jpg">
 </a>
-
-<!-- Modal -->
+-->
+<!--Modal-->
 <div class="modal fade text" id="myModal" tabindex="-1" role="dialog" aria-labelledby="detalhesModal">
+    <!-- id modal -->
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <!-- título -->
-                <h2 class="subtitle text-center">Purê de Batata</h2>
+                <h2 class="title text-center">Purê de Batata</h2>
             </div>
             <div class="modal-body">
 
@@ -75,41 +76,56 @@
                     <label>Comentários</label>
                 </div>
                 <div class="actionBox">
-                    @*   <ul class="commentList">
-                            <li>
-                                <div class="commenterImage">
-                                    <img src="http://lorempixel.com/50/50/people/6" />
-                                </div>
-                                <div class="commentText">
-                                    <p class="">Hello this is a test comment.</p> <span class="date sub-text">on March 5th, 2014</span>
-
-                                </div>
-                            </li>
-                            <li>
-                                <div class="commenterImage">
-                                    <img src="http://lorempixel.com/50/50/people/7" />
-                                </div>
-                                <div class="commentText">
-                                    <p class="">Hello this is a test comment and this comment is particularly very long and it goes on and on and on.</p> <span class="date sub-text">on March 5th, 2014</span>
-
-                                </div>
-                            </li>
-                            <li>
-                                <div class="commenterImage">
-                                    <img src="http://lorempixel.com/50/50/people/9" />
-                                </div>
-                                <div class="commentText">
-                                    <p class="">Hello this is a test comment.</p> <span class="date sub-text">on March 5th, 2014</span>
-
-                                </div>
-                            </li>
-                        </ul>*@
+                    <ul class="commentList">
+                        <li>
+                            <!-- foto perfil -->
+                            <div class="commenterImage">
+                                <img src="http://lorempixel.com/50/50/people/6" />
+                            </div>
+                            <!-- username -->
+                            <div class="timeline-username">
+                                <p>guiu</p>
+                            </div>
+                            <!-- comentário -->
+                            <div class="commentText text">
+                                <p style="margin-left: 10px">Hello this is a test comment.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- foto perfil -->
+                            <div class="commenterImage">
+                                <img src="http://lorempixel.com/50/50/people/7" />
+                            </div>
+                            <!-- username -->
+                            <div class="timeline-username">
+                                <p>mefiu</p>
+                            </div>
+                            <!-- comentário -->
+                            <div class="commentText text">
+                                <p style="margin-left: 10px">Hello this is a test comment.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- foto perfil -->
+                            <div class="commenterImage">
+                                <img src="http://lorempixel.com/50/50/people/9" />
+                            </div>
+                            <!-- username -->
+                            <div class="timeline-username">
+                                <p>bill</p>
+                            </div>
+                            <!-- comentário -->
+                            <div class="commentText text">
+                                <p style="margin-left: 10px">Hello this is a test comment.</p>
+                            </div>
+                        </li>
+                    </ul>
                     <form class="form-inline" role="form">
                         <div class="form-group">
                             <input class="form-control" type="text" placeholder="Comente a receita.." />
                         </div>
                         <div style="float: right; margin-top: -34px">
-                            <button class="btn btn-orange btn-block">Postar</button>
+                            <button class="btn btn-orange btn-block">COMENTAR</button>
                         </div>
                     </form>
                 </div>
